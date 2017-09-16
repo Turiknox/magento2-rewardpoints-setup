@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/*
+ * Turiknox_RewardPoints
+
+ * @category   Turiknox
+ * @package    Turiknox_RewardPoints
+ * @copyright  Copyright (c) 2017 Turiknox
+ * @license    https://github.com/Turiknox/magento2-rewardpoints-setup/blob/master/LICENSE.md
+ * @version    1.0.0
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/App/etc/routes.xsd">
+    <router id="admin">
+        <route id="rewardpoints" frontName="rewardpoints">
+            <module name="Turiknox_RewardPoints" />
+        </route>
+    </router>
+</config>

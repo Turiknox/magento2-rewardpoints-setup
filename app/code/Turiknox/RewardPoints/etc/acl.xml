@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/*
+ * Turiknox_RewardPoints
+
+ * @category   Turiknox
+ * @package    Turiknox_RewardPoints
+ * @copyright  Copyright (c) 2017 Turiknox
+ * @license    https://github.com/Turiknox/magento2-rewardpoints-setup/blob/master/LICENSE.md
+ * @version    1.0.0
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::marketing">
+                    <resource id="Turiknox_RewardPoints::points" title="Reward Points" translate="title" sortOrder="50">
+                        <resource id="Turiknox_RewardPoints::earning_rate" title="Earning Rates" translate="title" sortOrder="10" />
+                        <resource id="Turiknox_RewardPoints::spending_rate" title="Spending Rates" translate="title" sortOrder="20" />
+                        <resource id="Turiknox_RewardPoints::transaction" title="Transactions" translate="title" sortOrder="30" />
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

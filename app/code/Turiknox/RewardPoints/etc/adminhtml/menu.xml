@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/*
+ * Turiknox_RewardPoints
+
+ * @category   Turiknox
+ * @package    Turiknox_RewardPoints
+ * @copyright  Copyright (c) 2017 Turiknox
+ * @license    https://github.com/Turiknox/magento2-rewardpoints-setup/blob/master/LICENSE.md
+ * @version    1.0.0
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Turiknox_Rewardpoints::points" title="Reward Points" translate="title" module="Turiknox_RewardPoints"
+             parent="Magento_Backend::marketing" sortOrder="99" resource="Turiknox_RewardPoints::points"/>
+        <add id="Turiknox_Rewardpoints::earning_rate" title="Earning Rates" translate="title" module="Turiknox_RewardPoints"
+             parent="Turiknox_Rewardpoints::points" sortOrder="10" action="rewardpoints/earningrate/index/direction/2" resource="Turiknox_RewardPoints::earning_rate"/>
+        <add id="Turiknox_Rewardpoints::spending_rate" title="Spending Rates" translate="title" module="Turiknox_RewardPoints"
+             parent="Turiknox_Rewardpoints::points" sortOrder="20" action="rewardpoints/spendingrate/index/direction/1" resource="Turiknox_RewardPoints::spending_rate"/>
+        <add id="Turiknox_Rewardpoints::transaction" title="Transactions" translate="title" module="Turiknox_RewardPoints"
+             parent="Turiknox_Rewardpoints::points" sortOrder="30" action="rewardpoints/transaction" resource="Turiknox_RewardPoints::transaction"/>
+    </menu>
+</config>
